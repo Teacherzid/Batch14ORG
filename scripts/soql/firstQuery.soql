@@ -1,0 +1,23 @@
+//select id, name, phone from Account
+
+//select id, name, Project_Name__c, Status__c, Description__c from Salesforce_Project__c
+
+//SELECT Id, Name, Industry, phone, accountnumber from account where phone !='' and accountnumber!=null
+
+//SELECT Id, Name, Industry, phone, accountnumber from account where (phone !='' or website !='') and accountnumber!=null 
+
+//SELECT Id, Name, Industry, phone, accountnumber, AnnualRevenue from account where AnnualRevenue > 100000
+
+//SELECT Id, Name, Industry, phone, accountnumber, AnnualRevenue from account where createddate = Last_N_days:365
+
+//SELECT Id, Name, mailingcity from contact where mailingcity = 'paris' or mailingcity = 'lawrence' or mailingcity = 'burlington' 
+//ile list yapmak icin in kullanilir. Ornegin ==>
+//SELECT Id, Name, mailingcity from contact where mailingcity in ('paris','lawrence','burlington')
+
+//select id, name, AccountId, account.name, account.phone from contact where account.industry = 'energy' ==> 
+       //account.phone burada nokta isareti ile child-parent iliskideki detail cagriliyor.
+
+//select id, name, subject__c, priority__c, salesforce_project__r.project_name__c, salesforce_project__r.status__c from salesforce_ticket__c 
+      // custom relationshiplerde salesforce_project__r.project_name__c ornekteki gibi r konuyor.
+
+
