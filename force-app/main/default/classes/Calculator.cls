@@ -35,6 +35,7 @@ public class Calculator {
         return sum;
     }
     //Parameterless method
+
     public void publicMessage(){
         System.debug('public method called');
         //call private method from public method
@@ -43,6 +44,7 @@ public class Calculator {
         System.debug('called private method');
     }
     //Parameterless method
+    //Private method which prints some default message
     private void privateMessage1(){
     System.debug('called private method');   
     }
