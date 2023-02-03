@@ -34,6 +34,7 @@ public class Calculator {
         integer sum = x + y + z;
         return sum;
     }
+    //Parameterless method
     public void publicMessage(){
         System.debug('public method called');
         //call private method from public method
@@ -41,6 +42,7 @@ public class Calculator {
         privateMessage1();
         System.debug('called private method');
     }
+    //Parameterless method
     private void privateMessage1(){
     System.debug('called private method');   
     }
